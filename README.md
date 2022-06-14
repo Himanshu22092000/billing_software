@@ -4,7 +4,7 @@ Instead of making bills manually or to sum up the total manually, it is very muc
 When making a hand written bill the owner and customer both have to repeatedly check the total, items added, etc. 
 It also sometimes results into a Bad Impression towards the Restaurant from a Customer. 
 Ideally, user should be able to generate bill without any mistakes and quickly, enabling them to fasten or improve their process. 
-To overcome this problem, we have come up with this project, that is, Restaurant Billing System Using Python.
+To overcome this problem, we have come up with this project, that is, Billing System Using Python.
 ## Salient features of billing system:
 
 •	Paperwork reduction.<br />
@@ -19,7 +19,7 @@ To overcome this problem, we have come up with this project, that is, Restaurant
 
 
 ## Pre-Requisites
-*Python, CustomTkinter*
+*Python, [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter)*
 
 ## Run / Execute
 *$ BillingSoftware.py*
@@ -30,5 +30,6 @@ To overcome this problem, we have come up with this project, that is, Restaurant
 ![image](https://user-images.githubusercontent.com/96567363/173524227-3c998cbe-4abc-41e6-b882-e9096aa81fa7.png)
 
 ![image](https://user-images.githubusercontent.com/96567363/173524264-8c59e120-aec0-4fea-8865-b885a5245105.png)
+
 ### Generated Bill
-![image](https://user-images.githubusercontent.com/96567363/173524473-226f8b0f-531b-47bb-ae17-19a056c0f464.png)
+<img width="290" alt="image" src="https://user-images.githubusercontent.com/96567363/173562250-d5126ec1-bf86-496a-bea0-54286b6db0d9.png">
