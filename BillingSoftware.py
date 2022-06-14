@@ -352,17 +352,20 @@ class Billing:
         self.Total= float(self.c_tax+self.g_tax+self.cd_tax+c+a+b)
     def Welcome_bill(self):
         self.Text_1.delete(1.0,END)
-        self.Text_1.insert(END,"\t   This software is created by\n")
-        self.Text_1.insert(END,"\t\t   Himanshu jadoun \n")
-        self.Text_1.insert(END,"---------------------------------------------------\n")
-        self.Text_1.insert(END,"_________________SUPER MARKET Bill_________________\n\n")
+        self.Text_1.insert(END,"\t\t     Shop & Smile \n")
+        self.Text_1.insert(END,"\t\t   NEW DELHI-110001 \n")
+        self.Text_1.insert(END,"\t\t   phone: 8977544557 \n")
+        self.Text_1.insert(END,"\t\t     GSTIN:XYZ \n")
+        self.Text_1.insert(END, f"____________________________________________________\n")
+
+        self.Text_1.insert(END,"---------------------TAX INVOICE--------------------\n")
 
         self.Text_1.insert(END, f"Bill No.:   {self.Bill_No_1.get()} \n")
         self.Text_1.insert(END, f"Customer Name : {self.CustomerName1.get()}\n")
         self.Text_1.insert(END, f"Contact No. :{self.Contact_No_1.get()}\n")
-        self.Text_1.insert(END, f"---------------------------------------------------\n")
+        self.Text_1.insert(END, f"----------------------------------------------------\n")
         self.Text_1.insert(END, f"Product\t\t\tQuantity\t\tPrice\n")
-        self.Text_1.insert(END, f"---------------------------------------------------\n")
+        self.Text_1.insert(END, f"----------------------------------------------------\n")
 
     def Bill_Generate(self):
         self.Welcome_bill()
@@ -420,15 +423,18 @@ class Billing:
         if self.Limca_1.get() != 0:
             self.Text_1.insert(END, f"Limca\t\t\t{self.Limca_1.get() }\t\t{self.c_l}\n")
             # ----------Total Tax--------------#
-        self.Text_1.insert(END, f"---------------------------------------------------\n")
+        self.Text_1.insert(END, f"----------------------------------------------------\n")
         if self.c_tax != 0:
             self.Text_1.insert(END, f"Cosmatic Tax:\t\t\t\t\t{self.c_tax}\n")
         if self.g_tax != 0:
             self.Text_1.insert(END, f"Grocery Tax:\t\t\t\t\t{self.g_tax}\n")
         if self.cd_tax != 0:
             self.Text_1.insert(END, f"Cold Drink Tax:\t\t\t\t\t{self.cd_tax}\n")
-        self.Text_1.insert(END, f"---------------------------------------------------\n")
+        self.Text_1.insert(END, f"----------------------------------------------------\n")
         self.Text_1.insert(END, f"Total:\t\t\t\t\t{self.Total}\n")
+        self.Text_1.insert(END, f"----------------------------------------------------\n")
+        self.Text_1.insert(END, f" \t\t  Thanks for visiting <3 \n")
+        
     def Search(self):
         present="no"
         files=os.listdir("files/")
